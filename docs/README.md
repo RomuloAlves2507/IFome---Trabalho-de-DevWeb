@@ -39,26 +39,31 @@ Cada funcionalidade descrita no backlog possui ao menos uma tela representando s
 
 ### 🖼️ Protótipo do Requisito HU-1
 
-![Protótipo da tela de listagem de produtos](HU-1.png)
+![Protótipo da tela de listagem de produtos](HU-1.png).
+
 **Figura 1**: Tela de listagem de produtos com imagem, nome e preço — correspondente à história de usuário HU-1.
 
 
 ### 🖼️ Protótipo do Requisito HU-3
 
-![Protótipo da tela de listagem de produtos](HU-3.png)
+![Protótipo da tela de listagem de produtos](HU-3.png).
+
 **Figura 3**: Tela para visualizar o resumo do meu pedido com totais, para confirmar antes de finalizar - correspondendo a história de usuário HU-3.
 
 
 ### 🖼️ Protótipo do Requisito HU-5
 
-![Protótipo da tela de listagem de produtos](HU-5.png)
+![Protótipo da tela de listagem de produtos](HU-5.png).
+
 **Figura 5**: Tela para visualizar o status do pedido para saber quando será entregue - correspondente a história de usuário HU-5.
 
 
 ### 🖼️ Protótipo do Requisito HU-6
 
-![Protótipo da tela de listagem de produtos](HU-6.png)
+![Protótipo da tela de listagem de produtos](HU-6.png).
 **Figura 6**: Tela para avaliar o pedido após a entrega e, então, ajudar outros usuários com feedbacks.
+
+
 ---
 
 ## 🏗 Análise e Projeto 
