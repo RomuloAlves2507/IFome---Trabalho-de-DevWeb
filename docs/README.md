@@ -61,6 +61,7 @@ Cada funcionalidade descrita no backlog possui ao menos uma tela representando s
 ### 🖼️ Protótipo do Requisito HU-6
 
 ![Protótipo da tela de listagem de produtos](HU-6.png).
+
 **Figura 6**: Tela para avaliar o pedido após a entrega e, então, ajudar outros usuários com feedbacks.
 
 
