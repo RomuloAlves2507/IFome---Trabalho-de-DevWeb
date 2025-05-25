@@ -65,6 +65,42 @@ Cada funcionalidade descrita no backlog possui ao menos uma tela representando s
 **Figura 6**: Tela para avaliar o pedido após a entrega e, então, ajudar outros usuários com feedbacks.
 
 
+### 🖼️ Protótipo do Requisito HU-7
+
+![Protótipo da tela de listagem de entregas disponíveis](HU-7.jpg).
+
+**Figura 7**: Tela para visualizar os pedidos disponíveis para entrega.
+
+
+### 🖼️ Protótipo do Requisito HU-8
+
+![Protótipo da tela de login](HU-8pt1.jpg).
+
+**Figura 8.1**: Tela para realizar login.
+
+![Protótipo da tela de cadastro](HU-8pt2.jpg).
+
+**Figura 8.2**: Tela para realizar cadastro de um novo usuário.
+
+![Protótipo da tela do perfil do cliente](HU-8pt3.jpg).
+
+**Figura 8.3**: Tela para visualizar pedidos realizados e dados pessoais.
+
+
+### 🖼️ Protótipo do Requisito HU-9
+
+![Protótipo da tela de pedidos](HU-9.jpg).
+
+**Figura 9**: Tela para realizar aceite ou não novos pedidos.
+
+
+### 🖼️ Protótipo do Requisito HU-10
+
+![Protótipo da tela de produtos](HU-10.jpg).
+
+**Figura 10**: Tela para realizar atualizão de produtos.
+
+
 ---
 
 ## 🏗 Análise e Projeto 
