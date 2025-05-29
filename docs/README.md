@@ -21,7 +21,7 @@ ________________________________________________________________________________
 |  ID   | Prioridade |                                     História de Usuário                                                               |
 |-------|------------|-----------------------------------------------------------------------------------------------------------------------|
 | HU-1  |    1️⃣      | No papel de cliente, desejo visualizar uma lista de produtos com imagem e preço, para escolher o que quero pedir.    |
-| HU-2  |    2️⃣      | No papel de cliente, desejo adicionar itens ao meu pedido, para montar minha refeição.                               |
+| HU-2  |    2️⃣      | No papel de cliente, desejo remover itens já selecionados do meu pedido.                                             |
 | HU-3  |    3️⃣      | No papel de cliente, desejo visualizar o resumo do meu pedido com totais, para confirmar antes de finalizar.         |
 | HU-4  |    4️⃣      | No papel de cliente, desejo finalizar meu pedido com um clique, para tornar o processo mais rápido.                  |
 | HU-5  |    5️⃣      | No papel de cliente, desejo acompanhar o status do meu pedido, para saber quando será entregue.                      |
@@ -41,29 +41,27 @@ Cada funcionalidade descrita no backlog possui ao menos uma tela representando s
 
 ![Protótipo da tela de listagem de produtos](HU-1.png).
 
-**Figura 1**: Tela de listagem de produtos com imagem, nome e preço — correspondente à história de usuário HU-1.
+**Figura 1**: Tela de listagem de produtos com imagem, nome, preço e dispositivo para adicionar itens ao pedido.
 
 
 ### 🖼️ Protótipo do Requisito HU-3
 
 ![Protótipo da tela de listagem de produtos](HU-3.png).
 
-**Figura 3**: Tela para visualizar o resumo do meu pedido com totais, para confirmar antes de finalizar - correspondendo a história de usuário HU-3.
-
+**Figura 3**: Tela para visualizar o valor total do pedido e permitir, também, incrementar ou decrementar a quantidade do produto adicionado ao pedido.
 
 ### 🖼️ Protótipo do Requisito HU-5
 
 ![Protótipo da tela de listagem de produtos](HU-5.png).
 
-**Figura 5**: Tela para visualizar o status do pedido para saber quando será entregue - correspondente a história de usuário HU-5.
+**Figura 5**: Tela para visualizar o status do pedido, o perfil do entregador encarregado e a descrição do pedido.
 
 
 ### 🖼️ Protótipo do Requisito HU-6
 
 ![Protótipo da tela de listagem de produtos](HU-6.png).
 
-**Figura 6**: Tela para avaliar o pedido após a entrega e, então, ajudar outros usuários com feedbacks.
-
+**Figura 6**: Tela para avaliar o entregador e os produtos consumidos - é possível avaliar através da classificação por estrelas e comentando na caixa de texo. 
 
 ### 🖼️ Protótipo do Requisito HU-7
 
