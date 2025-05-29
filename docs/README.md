@@ -81,7 +81,7 @@ Cada funcionalidade descrita no backlog possui ao menos uma tela representando s
 
 ### 🖼️ Protótipo do Requisito HU-7
 
-![Protótipo da tela de listagem de entregas disponíveis](telas/HU-7.jpg).
+![Protótipo da tela de listagem de entregas disponíveis](telas/HU-7.png).
 
 **Figura 7**: Tela para visualizar os pedidos disponíveis para entrega.
 
