@@ -153,9 +153,15 @@ Gerenciados separadamente e com permissões diferentes.
 
 
 ### Tecnologias a serem utilizadas 
-Strapi, HTML, CSS, SQLITE....
+As tecnologias e ferramentas a serem utilizadas foram escolhidas com foco no conhecimento prévio da equipe:
 
----
+- **Strapi** – Utilizado como CMS e backend headless, facilitando a criação e consumo de APIs RESTful de forma rápida e estruturada.
+- **HTML5 e CSS3** – Base da estrutura e estilização das páginas, proporcionando uma experiência sólida e acessível ao usuário.
+- **JavaScript** – Responsável pela dinamização das interações e pela comunicação com o backend.
+- **SQLite** – Banco de dados relacional leve, ideal para projetos acadêmicos e ambientes locais, facilitando testes e organização dos dados.
+- **Bootstrap** – Framework CSS adotado para acelerar o desenvolvimento visual com componentes prontos e responsividade automática.  
+  A escolha do Bootstrap foi motivada pela sua curva de aprendizado acessível, ampla documentação e compatibilidade com HTML/CSS puros, tornando-o ideal para o escopo do nosso projeto mais básico
+
 
 ### Telas do sistema
 
