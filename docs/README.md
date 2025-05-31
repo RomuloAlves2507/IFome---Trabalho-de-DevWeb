@@ -1,6 +1,6 @@
 # 📘 Documentação do Projeto - Desenvolvimento Web
 
-![Canvas do Projeto](docs/ModelCanvas.jpg)
+![Canvas do Projeto](ModelCanvas.jpg)
 
 
 
