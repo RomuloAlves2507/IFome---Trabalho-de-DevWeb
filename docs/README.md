@@ -130,7 +130,7 @@ O projeto  do sistema
 ### Esboço da arquitetura geral (cliente-servidor)
 
 
-![alt text](image.png)
+![alt text](docs/ModelArquitetura.jpeg)
 
 
 ### Autorização  e Autenticação 
