@@ -1,6 +1,6 @@
 # 📘 Documentação do Projeto - Desenvolvimento Web
 
-![Canvas do Projeto](docs/Project%20Model%20Canvas%20-%20IFome.jpg)
+![Canvas do Projeto](docs/ModelCanvas.jpg)
 
 
 
