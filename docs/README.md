@@ -3,6 +3,7 @@
 ![Canvas do Projeto](docs/Project%20Model%20Canvas%20-%20IFome.jpg)
 
 
+
 ---
 
 ## 🧾 Visão Geral
