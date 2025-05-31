@@ -125,12 +125,12 @@ O projeto  do sistema
 
 ### Modelo 
 
-![alt text](docs/ModelDados.jpeg)
+![alt text](ModelDados.jpeg)
 
 ### Esboço da arquitetura geral (cliente-servidor)
 
 
-![alt text](docs/ModelArquitetura.jpeg)
+![alt text](ModelArquitetura.jpeg)
 
 
 ### Autorização  e Autenticação 
@@ -167,10 +167,10 @@ As tecnologias e ferramentas a serem utilizadas foram escolhidas com foco no con
 
 ### Telas do sistema
 
-![alt text](docs/telas 01 02.png)
+![alt text](telas%01%02.png)
 **Figura 1**: Tela de autenticação do usuario / e painel de gestão para adm
 
-![alt text](docs/telas 03 04.png)
+![alt text](telas%03%04.png)
 **Figura 2**: Tela principal com menu visual ao usuario / modelo de pedido 
 
 
