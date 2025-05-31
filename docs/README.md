@@ -167,10 +167,10 @@ As tecnologias e ferramentas a serem utilizadas foram escolhidas com foco no con
 
 ### Telas do sistema
 
-![alt text](telas%01%02.png)
+![alt text](tela1.png)
 **Figura 1**: Tela de autenticação do usuario / e painel de gestão para adm
 
-![alt text](telas%03%04.png)
+![alt text](tela2.png)
 **Figura 2**: Tela principal com menu visual ao usuario / modelo de pedido 
 
 
