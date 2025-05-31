@@ -1,6 +1,7 @@
 # 📘 Documentação do Projeto - Desenvolvimento Web
 
-![Planejamento do Projeto](./PMC_IFome.jpg)
+![Canvas do Projeto](docs/Project%20Model%20Canvas%20-%20IFome.jpg)
+
 
 ---
 
