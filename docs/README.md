@@ -125,7 +125,7 @@ O projeto  do sistema
 
 ### Modelo 
 
-![alt text](image-1.png)
+![alt text](docs/ModelDados.jpeg)
 
 ### Esboço da arquitetura geral (cliente-servidor)
 
@@ -167,7 +167,11 @@ As tecnologias e ferramentas a serem utilizadas foram escolhidas com foco no con
 
 ### Telas do sistema
 
-![alt text](tela1-1.png)
-**Figura 2**: Tela de listagem de produtos com imagem, nome e preço — correspondente à história de usuário HU-1.
+![alt text](docs/telas 01 02.png)
+**Figura 1**: Tela de autenticação do usuario / e painel de gestão para adm
+
+![alt text](docs/telas 03 04.png)
+**Figura 2**: Tela principal com menu visual ao usuario / modelo de pedido 
+
 
 
