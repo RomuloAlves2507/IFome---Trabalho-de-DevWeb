@@ -1,24 +1,41 @@
 {
   "kind": "collectionType",
-  "collectionName": "pedido",
+  "collectionName": "pedidos",
   "info": {
     "singularName": "pedido",
     "pluralName": "pedidos",
-    "displayName": "Pedido",
-    "description": ""
+    "displayName": "Pedido"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
-    "data": {
-      "type": "datetime"
-    },
-    "users_permissions_user": {
+    "usuario_id": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "pedidos"
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "data": {
+      "type": "date",
+      "required": true
+    },
+    "status_pedido": {
+      "type": "enumeration",
+      "required": true,
+      "default": "pendente",
+      "enum": [
+        "pendente",
+        "confirmado",
+        "em_preparo",
+        "pronto",
+        "a_caminho",
+        "entregue"
+      ]
+    },
+    "observacoes": {
+      "type": "text",
+      "default": "-"
     }
   }
 }

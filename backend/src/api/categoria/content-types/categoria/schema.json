@@ -1,25 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "categoria",
+  "collectionName": "categorias",
   "info": {
     "singularName": "categoria",
     "pluralName": "categorias",
-    "displayName": "Categoria",
-    "description": ""
+    "displayName": "Categoria"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "nome": {
       "type": "string",
       "required": true
-    },
-    "descricao": {
-      "type": "text"
-    },
-    "icone": {
-      "type": "string"
     }
   }
 }

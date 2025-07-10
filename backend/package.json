@@ -1,5 +1,5 @@
 {
-  "name": "pedidos",
+  "name": "ifome-backend",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -15,10 +15,9 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.12.4",
-    "@strapi/plugin-documentation": "^5.12.4",
-    "@strapi/plugin-users-permissions": "5.12.4",
-    "@strapi/strapi": "5.12.4",
+    "@strapi/plugin-cloud": "5.17.0",
+    "@strapi/plugin-users-permissions": "5.17.0",
+    "@strapi/strapi": "5.17.0",
     "better-sqlite3": "11.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -36,6 +35,7 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "37ecacfb-6751-43b2-958e-dce7db7e4052"
+    "uuid": "5cf9c20a-8a23-41f7-bd85-a56c5bbc68d8",
+    "installId": "6a41b407a281dcb2e0f8dd1d1772db50956d5b9d5bdc11c78a04af675f119272"
   }
 }

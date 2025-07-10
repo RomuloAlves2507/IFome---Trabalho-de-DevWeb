@@ -1,16 +1,26 @@
 {
   "kind": "collectionType",
-  "collectionName": "pedido_item",
+  "collectionName": "pedido_itens",
   "info": {
     "singularName": "pedido-item",
-    "pluralName": "pedido-items",
-    "displayName": "Pedido Item",
-    "description": ""
+    "pluralName": "pedido-itens",
+    "displayName": "Pedido_Item"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
+    "pedido": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pedido.pedido"
+    },
+    "produto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::produto.produto"
+    },
     "quantidade": {
       "type": "integer",
       "required": true
@@ -18,16 +28,6 @@
     "preco_unit": {
       "type": "decimal",
       "required": true
-    },
-    "pedido": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::pedido.pedido"
-    },
-    "produto": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::produto.produto"
     }
   }
 }

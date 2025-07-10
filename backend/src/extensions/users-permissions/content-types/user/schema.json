@@ -11,6 +11,7 @@
   "options": {
     "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "username": {
       "type": "string",
@@ -65,17 +66,29 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "carrinho": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::carrinho.carrinho",
-      "inversedBy": "user"
+    "dataNascimento": {
+      "type": "date"
     },
-    "pedidos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::pedido.pedido",
-      "mappedBy": "users_permissions_user"
+    "Nome": {
+      "type": "string",
+      "default": "User",
+      "required": true
+    },
+    "matricula": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "saldo": {
+      "type": "decimal",
+      "default": 0
+    },
+    "perfil": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
