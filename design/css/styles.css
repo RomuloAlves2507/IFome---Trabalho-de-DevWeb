@@ -1,0 +1,165 @@
+:root {
+  --ifome-verde: #1F5C43;
+  --ifome-verde-claro: #3C8C5A;
+  --ifome-amarelo: #E6B400;
+  --ifome-vermelho: #C83232;
+  --ifome-bege: #FAF4E3;
+  --ifome-texto: #222222;
+}
+
+/* GERAL */
+body {
+  background-color: var(--ifome-bege);
+  color: var(--ifome-texto);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--ifome-verde);
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--ifome-amarelo) !important;
+}
+
+/* HEADER */
+.masthead {
+  background-color: var(--ifome-verde);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.masthead .masthead-heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* BOTÕES */
+.btn-primary {
+  background-color: var(--ifome-amarelo);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #cc9c00;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: var(--ifome-vermelho);
+  border: none;
+  color: white;
+}
+
+.btn-success {
+  background-color: var(--ifome-verde-claro);
+  border: none;
+}
+
+/* SEÇÕES */
+.section-heading {
+  color: var(--ifome-verde);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.section-subheading {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* FORMULÁRIOS */
+input, textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: var(--ifome-verde);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ÍCONES / SEÇÕES ESPECIAIS */
+.section-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Corrige menu colapsado na navbar */
+.navbar-toggler {
+  background-color: white;
+  border: none;
+  color: var(--ifome-verde);
+}
+
+.navbar-collapse {
+  background-color: var(--ifome-verde);
+  text-align: left;
+  padding: 1rem;
+}
+
+/* Garante espaçamento e centralização */
+.masthead {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Corrige imagem de avatar */
+.masthead-avatar {
+  width: 240px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Centraliza textos do cabeçalho */
+.masthead-heading,
+.masthead-subheading {
+  text-align: center;
+}
+
+/* Reforça responsividade */
+@media (max-width: 768px) {
+  .masthead {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .masthead-heading {
+    font-size: 2rem;
+  }
+}
