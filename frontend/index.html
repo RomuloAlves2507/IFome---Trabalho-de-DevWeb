@@ -4,93 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IFome - Cardápio</title>
-
-  <!-- Fontes e CSS externos -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- CSS personalizado -->
-  <link href="css/styles.css" rel="stylesheet" />
-
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="assets/js/navbar.js" defer></script>
-  <script src="assets/js/api.js" defer></script>
-  <script src="assets/js/produtos.js" defer></script>
-
+  <link href="assets/css/tailwind.css" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #FAF4E3;
+      background: #fdf6e4;
     }
-    .navbar {
-      background-color: #1F5C43;
-    }
-    .navbar-brand,
-    .nav-link {
-      color: white !important;
-    }
-    .sidebar {
-      background-color: white;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-    }
-    .card-produto {
+    .btn-warning {
+      background-color: #d59c1a;
+      color: white;
       border: none;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .btn-pedir {
-      background-color: #1F5C43;
-      color: white;
-      font-weight: bold;
+    .btn-warning:hover {
+      background-color: #bb850a;
+    }
+    .produto-card {
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 20px;
       border-radius: 8px;
+      margin-inline-end: 16px;
     }
-    footer {
-      background-color: #1F5C43;
-      color: white;
+    .produto-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 16px;
+      padding: 16px 0;
+    }
+    .produto-slider::-webkit-scrollbar {
+      display: none;
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Navbar carregada por JS -->
-  <div id="navbar-placeholder"></div>
+  <!-- Navbar -->
 
-  <!-- Cabeçalho -->
-  <header class="container text-center py-4">
-    <h1 class="fw-bold text-success">Cardápio do IFome</h1>
-    <p class="text-muted">Escolha sua refeição e peça com facilidade</p>
+  <nav class="navbar navbar-dark bg-dark px-3 justify-content-between">
+  <span class="navbar-brand">Minha Loja</span>
+  <div>
+    <a href="pages/login.html" class="text-white me-3"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+    <a href="pages/cadastro.html" class="text-white me-3"><i class="bi bi-person-plus"></i> Cadastro</a>
+    <a href="pages/pedidos.html" class="text-white me-3"><i class="bi bi-receipt"></i> Pedidos</a>
+    <a href="pages/upload.html" class="text-white me-3"><i class="bi bi-upload"></i> Enviar Arquivo</a>
+    <a href="pages/carrinho.html" class="text-white"><i class="bi bi-cart3"></i> Carrinho</a>
+  </div>
+</nav>
+
+  <header class="text-center my-4">
+    <h2 class="text-success">Cardápio do IFome</h2>
+    <p>Escolha sua refeição e peça com facilidade</p>
+    <button class="btn btn-warning">Cardápio Online</button>
   </header>
 
-  <!-- Conteúdo principal -->
-  <main class="container pb-5">
-    <div class="row">
-      <!-- Filtros -->
-      <aside class="col-md-3 sidebar">
-        <h5>Categorias</h5>
-        <div id="filtro-container">
-          <!-- Checkboxes serão injetados aqui -->
-        </div>
-      </aside>
+  <!-- Slide Cards -->
+  <section class="container produto-slider">
+    <div class="produto-card">
+      <h5>Peça sua Marmita</h5>
+      <img src="assets/img/marmita.png" width="100" />
+    </div>
+    <div class="produto-card">
+      <h5>Compre sem fila</h5>
+      <img src="assets/img/semfila.png" width="100" />
+    </div>
+    <div class="produto-card">
+      <h5>Promoção do Dia</h5>
+      <img src="assets/img/promocao.png" width="100" />
+    </div>
+    <div class="produto-card">
+      <h5>Almoço Fresquinho</h5>
+      <img src="assets/img/almoço.png" width="100" />
+    </div>
+  </section>
 
-      <!-- Lista de Produtos -->
-      <section class="col-md-9">
-        <div id="produtos" class="row g-4">
-          <!-- Cards de produtos vêm do produtos.js -->
+  <!-- Pesquisa e Sobre -->
+  <main class="container my-5">
+    <div class="row">
+      <!-- Pesquisa -->
+      <div class="col-md-6 mb-4">
+        <div class="card p-3 shadow-sm border-warning">
+          <h5 class="text-success">Pesquisa</h5>
+          <label>Categoria</label>
+          <select class="form-select mb-2">
+            <option>Escolha...</option>
+            <option>Marmita</option>
+            <option>Lanche</option>
+          </select>
+          <label>Produto</label>
+          <input type="text" class="form-control" placeholder="Digite o nome do produto">
         </div>
-      </section>
+      </div>
+
+      <!-- Sobre -->
+      <div class="col-md-6 mb-4">
+        <div class="card p-3 shadow-sm">
+          <h5 class="text-success">Sobre o IFome</h5>
+          <p>O IFome é um sistema desenvolvido no Campus Serra para facilitar o acesso às refeições no Instituto Federal. Com ele, é possível visualizar o cardápio do dia, realizar pedidos personalizados e acompanhar o status das entregas. Nosso objetivo é trazer mais praticidade, organização, agilidade e evitar filas para agilizar o seu momento de descanso.</p>
+        </div>
+      </div>
     </div>
   </main>
 
-  <!-- Rodapé -->
-  <footer class="text-center py-3">
-    <p>© 2025 IFome - Todos os direitos reservados.</p>
+  <!-- Produtos -->
+  <section class="container mb-5">
+    <h4 class="mb-3">Produtos em Destaque</h4>
+    <div id="produtos" class="row g-4">
+      <!-- Conteúdo gerado por produtos.js -->
+    </div>
+  </section>
+
+  <!-- Feedback -->
+  <section class="container mb-5">
+    <div class="card p-3">
+      <h5 class="text-success">Mande seu Feedback</h5>
+      <label>Nome</label>
+      <input type="text" class="form-control mb-2" placeholder="Seu nome">
+      <label>Mensagem</label>
+      <textarea class="form-control mb-2" rows="3" placeholder="Digite seu feedback..."></textarea>
+      <button class="btn btn-success">Enviar</button>
+    </div>
+  </section>
+
+  <footer class="bg-success text-white text-center py-3">
+    © 2025 IFome – Todos os direitos reservados.
   </footer>
 
+  <!-- Scripts -->
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/produtos.js"></script>
 </body>
 </html>
