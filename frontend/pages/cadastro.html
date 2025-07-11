@@ -4,38 +4,56 @@
   <meta charset="UTF-8">
   <title>Cadastro - IFome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <style>
     body {
-      background-color: #fff7e6; /* amarelinho claro do index */
+      background-color: #fff3cd; /* mesmo tom do login */
     }
+
     .cadastro-card {
       max-width: 500px;
-      margin: 3rem auto;
+      margin: 2rem auto;
       border-radius: 1rem;
     }
-    .titulo-ifome {
+
+    .logo-container {
       text-align: center;
       margin-top: 2rem;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #212529;
     }
+
+    .logo-container img {
+      max-width: 160px;
+    }
+
+    .titulo-cadastro {
+      text-align: center;
+      margin-top: 1rem;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #e67e22; /* laranja */
+    }
+
     .btn-ifome {
       background-color: #116530;
       color: white;
     }
+
     .btn-ifome:hover {
       background-color: #0d4b25;
     }
+
     .link-ifome {
       color: #116530;
       font-weight: bold;
       text-decoration: none;
     }
+
     .link-ifome:hover {
       text-decoration: underline;
     }
@@ -43,12 +61,17 @@
 </head>
 <body>
 
-  <div class="titulo-ifome">IFome</div>
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="../assets/img/ifome.png" alt="Logo IFome">
+  </div>
 
+  <!-- Título divertido -->
+  <div class="titulo-cadastro">Crie sua conta</div>
+
+  <!-- Card de cadastro -->
   <div class="container cadastro-card">
     <div class="card shadow p-4">
-      <h2 class="h5 text-center mb-4">Crie sua conta</h2>
-
       <div id="alert-container"></div>
 
       <form id="cadastro-form">

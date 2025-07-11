@@ -12,7 +12,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      block-size: 100vh;
+      height: 100vh;
       margin: 0;
     }
 
@@ -25,16 +25,14 @@
     }
 
     .logo {
-      font-size: 4rem;
-      color: #1e4d3a;
-      font-weight: bold;
-      margin-bottom: 1rem;
+      max-width: 200px;
       animation: pulse 1.5s infinite;
+      margin-bottom: 1rem;
     }
 
     .subtitle {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem; /* Reduzi o espaçamento */
       color: #555;
     }
 
@@ -62,11 +60,11 @@
 <body>
 
   <div class="welcome-container">
-    <img src="../assets/img/logo-ifome.png" alt="IFome" class="img-fluid mb-3" style="max-width: 200px;">
-      <div class="subtitle">Sua cantina virtual, com sabor e praticidade</div>
-        <a href="login.html">
-        <button class="btn btn-start">Acessar para Pedir</button>
-        </a>
+    <img src="../assets/img/ifome.png" alt="IFome" class="logo">
+    <div class="subtitle">Sua cantina virtual, com sabor e praticidade</div>
+    <a href="login.html">
+      <button class="btn btn-start">Acessar para Pedir</button>
+    </a>
   </div>
 
 </body>
