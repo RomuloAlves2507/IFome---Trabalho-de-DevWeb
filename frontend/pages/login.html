@@ -2,65 +2,71 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Login - IFome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Bootstrap & ícones -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Estilo customizado -->
+  <!-- Estilo personalizado -->
   <style>
     body {
-      background: linear-gradient(to right, #f8fafc, #e2e8f0);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff3cd;
+    }
+
+    .ifome-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
+      color: #212529;
     }
 
     .login-card {
-      max-width: 420px;
-      margin: 5rem auto;
+      max-width: 400px;
+      margin: 2rem auto;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
     }
 
-    .card {
-      border-radius: 1rem;
-      border: none;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-body {
+    .login-card .card-body {
       padding: 2rem;
     }
 
-    .form-label {
-      font-weight: 600;
+    .btn-ifome {
+      background-color: #198754;
+      color: white;
     }
 
-    .btn-success {
-      background-color: #16a34a;
-      border: none;
+    .btn-ifome:hover {
+      background-color: #157347;
     }
 
-    .btn-success:hover {
-      background-color: #15803d;
+    .card-footer {
+      background-color: transparent;
+      border-top: none;
     }
 
-    .text-muted {
-      font-size: 0.9rem;
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Menu -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid px-4">
-      <a class="navbar-brand" href="../index.html">🛍️ Minha Loja</a>
-    </div>
-  </nav>
+  <!-- Título centralizado -->
+  <div class="ifome-title">IFome</div>
 
-  <!-- Formulário -->
-  <div class="container login-card">
+  <!-- Formulário de Login -->
+  <div class="container login-card mt-4">
     <div class="card">
       <div class="card-body">
         <h2 class="h5 text-center mb-4">Acesse sua conta</h2>
@@ -75,7 +81,6 @@
               <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
             </div>
           </div>
-
           <div class="mb-3">
             <label for="password" class="form-label">Senha</label>
             <div class="input-group">
@@ -83,18 +88,17 @@
               <input type="password" class="form-control" id="password" placeholder="********" required>
             </div>
           </div>
-
-          <button type="submit" class="btn btn-success w-100">Entrar</button>
+          <button type="submit" class="btn btn-ifome w-100">Entrar</button>
         </form>
-
-        <div class="text-center mt-4">
-          <p class="mb-0 text-muted">Ainda não tem uma conta?</p>
-          <a href="cadastro.html" class="text-primary fw-bold">Clique aqui para se cadastrar</a>
-        </div>
+      </div>
+      <div class="card-footer text-center">
+        <p class="mb-1 text-muted">Ainda não tem uma conta?</p>
+        <a href="cadastro.html"><strong>Clique aqui para se cadastrar</strong></a>
       </div>
     </div>
   </div>
 
+  <!-- Scripts -->
   <script src="../assets/js/api.js"></script>
   <script src="../assets/js/login.js"></script>
 </body>

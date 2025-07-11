@@ -2,58 +2,83 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Cadastro</title>
+  <title>Cadastro - IFome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link href="../assets/css/tailwind.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8fafc;
+      background-color: #fff7e6; /* amarelinho claro do index */
     }
     .cadastro-card {
       max-width: 500px;
-      margin: 5rem auto;
+      margin: 3rem auto;
+      border-radius: 1rem;
+    }
+    .titulo-ifome {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #212529;
+    }
+    .btn-ifome {
+      background-color: #116530;
+      color: white;
+    }
+    .btn-ifome:hover {
+      background-color: #0d4b25;
+    }
+    .link-ifome {
+      color: #116530;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .link-ifome:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid px-4">
-      <a class="navbar-brand" href="../index.html">🛍️ Minha Loja</a>
-    </div>
-  </nav>
+  <div class="titulo-ifome">IFome</div>
 
   <div class="container cadastro-card">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h2 class="h5 text-center mb-4">Crie sua conta</h2>
+    <div class="card shadow p-4">
+      <h2 class="h5 text-center mb-4">Crie sua conta</h2>
 
-        <div id="alert-container"></div>
+      <div id="alert-container"></div>
 
-        <form id="cadastro-form">
-          <div class="mb-3">
-            <label for="username" class="form-label">Nome</label>
+      <form id="cadastro-form">
+        <div class="mb-3">
+          <label for="username" class="form-label">Nome</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-person"></i></span>
             <input type="text" class="form-control" id="username" placeholder="Seu nome completo" required>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
             <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Senha</label>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Senha</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-lock"></i></span>
             <input type="password" class="form-control" id="password" placeholder="Crie uma senha" required>
           </div>
-          <button type="submit" class="btn btn-success w-100">Cadastrar</button>
-        </form>
-
-        <div class="text-center mt-4">
-          <p class="mb-0 text-muted">Já tem uma conta?</p>
-          <a href="login.html" class="text-primary fw-bold">Clique aqui para entrar</a>
         </div>
+        <button type="submit" class="btn btn-ifome w-100">Cadastrar</button>
+      </form>
+
+      <div class="text-center mt-4">
+        <p class="mb-0 text-muted">Já tem uma conta?</p>
+        <a href="login.html" class="link-ifome">Clique aqui para entrar</a>
       </div>
     </div>
   </div>
