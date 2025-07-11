@@ -7,78 +7,122 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./css/estilo.css" />
 
-  
   <style>
     body {
       background: #fdf6e4;
     }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1e3c36;
+    }
+
+    /* Logo e título centralizado */
+    header {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    header img {
+      max-height: 100px;
+    }
+
+    header h1 {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #116530;
+      font-size: 2.2rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Botão laranja */
     .btn-warning {
       background-color: #d59c1a;
       color: white;
       border: none;
     }
+
     .btn-warning:hover {
       background-color: #bb850a;
     }
-    .produto-card {
-      background-color: #fff3cd;
-      border: 1px solid #ffeeba;
-      padding: 20px;
-      border-radius: 8px;
-      margin-inline-end: 16px;
-    }
+
+    /* Cards do slide */
     .produto-slider {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      gap: 16px;
-      padding: 16px 0;
+      gap: 24px;
+      padding: 16px;
+      justify-content: center;
     }
+
     .produto-slider::-webkit-scrollbar {
       display: none;
+    }
+
+    .produto-card {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      border-radius: 12px;
+      padding: 1rem;
+      scroll-snap-align: center;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .produto-card:hover {
+      transform: scale(1.05);
+    }
+
+    .produto-card img {
+      margin-top: 15px;
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark px-4 justify-content-end">
+    <div>
+      <a href="pages/login.html" class="text-white me-3"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+      <a href="pages/cadastro.html" class="text-white me-3"><i class="bi bi-person-plus"></i> Cadastro</a>
+      <a href="pages/pedidos.html" class="text-white me-3"><i class="bi bi-receipt"></i> Pedidos</a>
+      <a href="pages/upload.html" class="text-white me-3"><i class="bi bi-upload"></i> Enviar Arquivo</a>
+      <a href="pages/carrinho.html" class="text-white"><i class="bi bi-cart3"></i> Carrinho</a>
+    </div>
+  </nav>
 
-  <nav class="navbar navbar-dark bg-dark px-3 justify-content-between">
-  <span class="navbar-brand">Minha Loja</span>
-  <div>
-    <a href="pages/login.html" class="text-white me-3"><i class="bi bi-box-arrow-in-right"></i> Login</a>
-    <a href="pages/cadastro.html" class="text-white me-3"><i class="bi bi-person-plus"></i> Cadastro</a>
-    <a href="pages/pedidos.html" class="text-white me-3"><i class="bi bi-receipt"></i> Pedidos</a>
-    <a href="pages/upload.html" class="text-white me-3"><i class="bi bi-upload"></i> Enviar Arquivo</a>
-    <a href="pages/carrinho.html" class="text-white"><i class="bi bi-cart3"></i> Carrinho</a>
-  </div>
-</nav>
-
-  <header class="text-center my-4">
-    <h2 class="text-success">Cardápio do IFome</h2>
-    <p>Escolha sua refeição e peça com facilidade</p>
-    <button class="btn btn-warning">Cardápio Online</button>
+  <!-- LOGO CENTRALIZADA -->
+  <header>
+    <img src="assets/img/ifome.png" alt="Logo IFome">
+    <h1>Escolha sua refeição e peça com facilidade</h1>
   </header>
 
   <!-- Slide Cards -->
   <section class="container produto-slider">
     <div class="produto-card">
       <h5>Peça sua Marmita</h5>
-      <img src="assets/img/marmita.png" width="100" />
+      <img src="assets/img/marmita.png" alt="Marmita">
     </div>
     <div class="produto-card">
       <h5>Compre sem fila</h5>
-      <img src="assets/img/semfila.png" width="100" />
+      <img src="assets/img/semfila.png" alt="Sem Fila">
     </div>
     <div class="produto-card">
       <h5>Promoção do Dia</h5>
-      <img src="assets/img/promocao.png" width="100" />
+      <img src="assets/img/promocao.png" alt="Promoção">
     </div>
     <div class="produto-card">
       <h5>Almoço Fresquinho</h5>
-      <img src="assets/img/almoço.png" width="100" />
+      <img src="assets/img/marmitafresquinha.png" alt="Almoço Fresquinho">
     </div>
   </section>
 
@@ -110,33 +154,32 @@
     </div>
   </main>
 
-  <!-- Produtos -->
-  <section class="container mb-5">
-     <!-- Alimentos da Época -->
-<div class="container my-4">
-  <div class="card shadow-sm p-3 bg-warning-subtle">
-    <h5 class="fw-bold text-success">Alimentos da Época 🍊</h5>
-    <div class="row g-2">
-      <div class="col-md-3">
-        <div class="p-2 border rounded bg-white text-center">
-          <p class="mb-1 fw-semibold">🍓 Morango</p>
-          <small>Rico em vitamina C</small>
+  <!-- Alimentos da Época -->
+  <section class="container my-4">
+    <div class="card shadow-sm p-3 bg-warning-subtle">
+      <h5 class="fw-bold text-success">Alimentos da Época 🍊</h5>
+      <div class="row g-2">
+        <div class="col-md-3">
+          <div class="p-2 border rounded bg-white text-center">
+            <p class="mb-1 fw-semibold">🍓 Morango</p>
+            <small>Rico em vitamina C</small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-2 border rounded bg-white text-center">
+            <p class="mb-1 fw-semibold">🥬 Couve</p>
+            <small>Ótima pra suco verde</small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-2 border rounded bg-white text-center">
+            <p class="mb-1 fw-semibold">🥕 Cenoura</p>
+            <small>Boa para a visão</small>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="p-2 border rounded bg-white text-center">
-          <p class="mb-1 fw-semibold">🥬 Couve</p>
-          <small>Ótima pra suco verde</small>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-2 border rounded bg-white text-center">
-          <p class="mb-1 fw-semibold">🥕 Cenoura</p>
-          <small>Boa para a visão</small>
-        </div>
+    </div>
   </section>
-
- 
 
   <!-- Feedback -->
   <section class="container mb-5">
@@ -150,6 +193,7 @@
     </div>
   </section>
 
+  <!-- Rodapé -->
   <footer class="bg-success text-white text-center py-3">
     © 2025 IFome – Todos os direitos reservados.
   </footer>
@@ -159,3 +203,4 @@
   <script src="assets/js/produtos.js"></script>
 </body>
 </html>
+

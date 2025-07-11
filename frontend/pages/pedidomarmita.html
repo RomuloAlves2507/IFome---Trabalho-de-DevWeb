@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monte sua Marmita</title>
+  <link rel="stylesheet" href="../assets/css/estilo.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container mt-5">
+
+  <h1 class="text-center fw-bold mb-3">Monte sua Marmita</h1>
+  <p class="text-center mb-4">Valor fixo: <strong>R$ 14,90</strong></p>
+
+  <form id="formMarmita">
+    <div class="mb-4">
+      <h5><strong>Escolha suas saladas (várias opções):</strong></h5>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="salada" value="Alface" id="alface">
+        <label class="form-check-label" for="alface">Alface</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="salada" value="Tomate" id="tomate">
+        <label class="form-check-label" for="tomate">Tomate</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="salada" value="Cenoura" id="cenoura">
+        <label class="form-check-label" for="cenoura">Cenoura</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="salada" value="Beterraba" id="beterraba">
+        <label class="form-check-label" for="beterraba">Beterraba</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <h5><strong>Escolha 1 proteína:</strong></h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="proteina" value="Frango Grelhado" id="frango">
+        <label class="form-check-label" for="frango">Frango Grelhado</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="proteina" value="Carne Moída" id="carne">
+        <label class="form-check-label" for="carne">Carne Moída</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="proteina" value="Omelete" id="omelete">
+        <label class="form-check-label" for="omelete">Omelete</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="proteina" value="Proteína de Soja" id="soja">
+        <label class="form-check-label" for="soja">Proteína de Soja</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <h5><strong>Acompanhamentos:</strong></h5>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="acompanhamento" value="Arroz" id="arroz">
+        <label class="form-check-label" for="arroz">Arroz</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="acompanhamento" value="Feijão" id="feijao">
+        <label class="form-check-label" for="feijao">Feijão</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="acompanhamento" value="Macarrão" id="macarrao">
+        <label class="form-check-label" for="macarrao">Macarrão</label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Finalizar Pedido</button>
+  </form>
+
+  <script>
+    document.getElementById("formMarmita").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Verifica se o usuário está "logado"
+      if (!sessionStorage.getItem("usuarioLogado")) {
+        alert("Você precisa estar logado para fazer o pedido.");
+        window.location.href = "login.html";
+        return;
+      }
+
+      // Validação da proteína
+      const proteinaSelecionada = document.querySelector('input[name="proteina"]:checked');
+      if (!proteinaSelecionada) {
+        alert("Por favor, selecione uma proteína.");
+        return;
+      }
+
+      // Exibe alerta e redireciona
+      alert("Parabéns, seu pedido foi salvo. Já fiquei com seu comprovante de pagamento em mãos.");
+      window.location.href = "../index.html";
+    });
+  </script>
+</body>
+</html>
